@@ -38,8 +38,6 @@ def pick_up_schedule_window():
   newWindow = Toplevel()
   newWindow.title("Pick-up Schedule")
 
-  
-
   # add label for Pick-up Day
   day_label = Label(newWindow, text="Pick-up Day")
   day_label.grid(row=2, column=0, pady=10)
@@ -232,23 +230,23 @@ def submit_payment(enter_payment_amount):
                          "Please enter a valid payment amount.")
 
 
-# create buttons 1
+# create record buttons to create user information
 createrecord = Button(frame2,
                       text="Create Record",
                       command=create_record_window)
 createrecord.grid(row=0, column=1)
 
-# create buttons 2
+# Create a button to schdule pick up days and time
 pick_up_schedule = Button(frame2,
                           text="Pick-up Schedule",
                           command=pick_up_schedule_window)
 pick_up_schedule.grid(row=1, column=1)
 
-# create buttons 3
+# Create trash weight measurement to measure the weight of the trash
 trash_weight = Button(frame2, text="Trash Weight", command=trash_weight_window)
 trash_weight.grid(row=2, column=1)
 
-# create buttons 4
+# Create Pay button to make final payment
 pay = Button(frame2, text="Pay", command=payment_window)
 pay.grid(row=3, column=1)
 
